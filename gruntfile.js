@@ -14,6 +14,51 @@ module.exports = function(grunt) {
 					},
 					{
 						expand: true,
+						cwd: 'node_modules/font-awesome/fonts',
+						src: [
+							'FontAwesome.otf',
+							'fontwesome-webfont.eot',
+							'fontawesome-webfont.svg',
+							'fontawesome-webfont.ttf',
+							'fontawesome-webfont.woff',
+							'fontawesome-webfont.woff2',
+						],
+						dest: 'www/fonts'
+					},
+					{
+						expand: true,
+						cwd: 'node_modules/font-awesome/css',
+						src: [
+							'font-awesome.min.css',
+						],
+						dest: 'www/styles'
+					},
+					{
+						expand: true,
+						cwd: 'node_modules/typeface-comfortaa/files',
+						src: [
+							'comfortaa-latin-700.woff',
+						],
+						dest: 'www/fonts/comfortaa'
+					},
+					{
+						expand: true,
+						cwd: 'node_modules/lato-font/fonts/lato-normal',
+						src: [
+							'lato-normal.woff',
+						],
+						dest: 'www/fonts/lato'
+					},
+					{
+						expand: true,
+						cwd: 'node_modules/lato-font/fonts/lato-semibold',
+						src: [
+							'lato-semibold.woff',
+						],
+						dest: 'www/fonts/lato'
+					},
+					{
+						expand: true,
 						cwd: 'sources/images',
 						src: '**',
 						dest: 'www/images'

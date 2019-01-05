@@ -10,12 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "cordova-android": "latest",
+    "font-awesome": "^4.7.0",
     "grunt": "^1.0.3",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-pug": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.0.2",
-    "node-sass": "^4.11.0"
+    "lato-font": "^3.0.0",
+    "node-sass": "^4.11.0",
+    "typeface-comfortaa": "0.0.54"
   },
   "cordova": {
     "platforms": [

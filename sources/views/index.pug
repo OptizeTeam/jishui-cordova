@@ -1,0 +1,24 @@
+extends layout
+
+mixin listElement(link, name)
+	.element
+		a.name(href=link)= name
+		a.delete(href='#' onclick='showPopup()')
+			i.fa.fa-trash-o
+
+block header
+	.extra-space
+	.title
+		h1 Jishui
+	.add
+		a(href='add.html')
+			i.fa.fa-plus
+
+block content
+	+listElement('details.html', 'Drożdżówka')
+
+	include partials/_popups
+
+block scripts
+	script(src='scripts/index.js')
+
