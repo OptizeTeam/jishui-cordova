@@ -12,19 +12,19 @@ block header
 	.extra-space
 
 block content
-	h2 Drożdżówka
-	h3 Składniki
-	ul
-		+component('1 kg mąki')
-		+component('100 g drożdży')
-		+component('500 ml mleka')
-		+component('3 jajka')
-		+component('1 i 1/4 szkl cukru')
-		+component('125 g margaryny')
-		+component('1/4 szklanki oleju')
-	h3 Przygotowanie
-	p 1. Mleko podgrzewamy z cukrem. Odlewamy około pół szklanki do innego naczynia, dodajemy drożdże i 2-3 łyżki mąki. Całość mieszamy i odstawiamy do wyrośnięcia.
-	p 2. Do reszty mleka dodajemy margarynę i olej, gotujemy. Wrzące wlewamy do miski i mieszamy drewnianą łyżką dosypując połowę mąki. Ciasto jest gorące, więc nie radzę robić tego ręka. Stopniowo dodajemy po jednym jajku a następnie zaczyn. Na koniec dosypujemy resztę mąki. Ciasto nadal mieszamy łyżką. Jego konsystencja powinna być dość rzadka.
-	p 3. Kiedy wszystkie składniki połączą się, nakrywamy miskę ściereczką i zostawiamy do wyrośnięcia. Dzięki temu, że ciasto jest nadal dość ciepłe, proces ten powinien trwać najwyżej 1 godz.
-	p 4. Składniki na kruszonkę umieszczamy w misce. Za pomocą dłoni rozgniatamy margarynę w cukrze z mąką. Powinna być dobrze schłodzona, ponieważ miękka będzie się rozpuszczała pod wpływem ciepłoty ciała. W ten sposób otrzymamy nieregularne grudki.
-	p 5. Wyrośnięte ciasto zagniatamy przez chwilę podsypując odrobiną mąki. Przekładamy do prostokątnej formy o wymiarach 25 x 40 cm i posypujemy kruszonką. Pieczemy w 180 stopniach około 45 minut do suchego patyczka.
+	h2
+	//h3 Składniki
+	//ul
+	//	+component('1 kg mąki')
+	//	+component('100 g drożdży')
+	//	+component('500 ml mleka')
+	//	+component('3 jajka')
+	//	+component('1 i 1/4 szkl cukru')
+	//	+component('125 g margaryny')
+	//	+component('1/4 szklanki oleju')
+	//h3 Przygotowanie
+	.description
+
+block scripts
+	script(src='scripts/plugins/markdown.js')
+	script(src='scripts/details.js')

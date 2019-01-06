@@ -1,11 +1,5 @@
 extends layout
 
-mixin listElement(link, name)
-	.element
-		a.name(href=link)= name
-		a.delete(href='#' onclick='showPopup()')
-			i.fa.fa-trash-o
-
 block header
 	.extra-space
 	.title
@@ -15,9 +9,15 @@ block header
 			i.fa.fa-plus
 
 block content
-	+listElement('details.html', 'Drożdżówka')
+	#elements
 
 	include partials/_popups
+
+	#templates(style='display: none;')
+		#list-element-template.element
+			a.name(href='')
+			a.delete(href='#')
+				i.fa.fa-trash-o
 
 block scripts
 	script(src='scripts/index.js')

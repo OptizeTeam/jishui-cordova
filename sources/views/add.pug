@@ -12,9 +12,12 @@ block header
 	.extra-space
 
 block content
-	form
+	form#new-recipe
 		label(for='name') Nazwa
 		input#name
 		label(for='description') Opis
 		textarea#description
 		button Dodaj przepis
+
+block scripts
+	script(src='scripts/add.js')
