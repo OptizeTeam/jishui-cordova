@@ -1,5 +1,7 @@
 .idea/
 .vscode/
+**/environment/*
+!**/environment/**/*.sample.*
 node_modules/
 /platforms/
 /plugins/

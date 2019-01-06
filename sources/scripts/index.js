@@ -9,7 +9,7 @@ request.addEventListener('load', function (response) {
 		addRecipe(recipes[i].id, recipes[i].name);
 	}
 });
-request.open('GET', 'http://10.42.0.20:3000/recipe/list');
+request.open('GET', API + '/recipe/list');
 request.send();
 
 function showPopup() {
@@ -74,7 +74,7 @@ function deleteRecipe() {
 	request.addEventListener('load', function (response) {
 		location.reload();
 	});
-	request.open('DELETE', 'http://10.42.0.20:3000/recipe/' + recipeToDelete);
+	request.open('DELETE', API + '/recipe/' + recipeToDelete);
 	request.send();
 
 }

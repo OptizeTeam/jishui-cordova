@@ -15,5 +15,5 @@ request.addEventListener('load', function (response) {
 		document.getElementsByClassName('description')[0].innerHTML = '<p>Wybrany przepis nie posiada jeszcze opisu.</p>';
 	}
 });
-request.open('GET', 'http://10.42.0.20:3000/recipe/' + id);
+request.open('GET', API + '/recipe/' + id);
 request.send();

@@ -16,7 +16,7 @@ form.addEventListener('submit', function (e) {
 	request.addEventListener('load', function (response) {
 		location = 'index.html';
 	});
-	request.open('POST', 'http://10.42.0.20:3000/recipe');
+	request.open('POST', API + '/recipe');
 	request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
 	request.send(JSON.stringify(recipe));
 });
