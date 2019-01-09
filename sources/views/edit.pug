@@ -5,20 +5,20 @@ block styles
 
 block header
 	.return
-		a(href='index.html')
+		a.back(href='')
 			i.fa.fa-arrow-left
 	.title
-		h1 Nowy przepis
+		h1 Edytuj przepis
 	.extra-space
 
 block content
-	form#new-recipe
+	form#edit-recipe
 		label(for='name') Nazwa
 		input#name
 		label(for='description') Opis
 		textarea#description
-		button Dodaj przepis
+		button Edytuj przepis
 
 block scripts
 	script(src='scripts/plugins/simplemde.min.js')
-	script(src='scripts/add.js')
+	script(src='scripts/edit.js')

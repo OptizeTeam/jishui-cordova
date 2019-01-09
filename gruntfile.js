@@ -21,15 +21,23 @@ module.exports = function(grunt) {
 							'fontawesome-webfont.svg',
 							'fontawesome-webfont.ttf',
 							'fontawesome-webfont.woff',
-							'fontawesome-webfont.woff2',
+							'fontawesome-webfont.woff2'
 						],
 						dest: 'www/fonts'
 					},
 					{
 						expand: true,
+						cwd: 'node_modules/simplemde/dist',
+						src: [
+							'simplemde.min.css'
+						],
+						dest: 'www/styles/plugins'
+					},
+					{
+						expand: true,
 						cwd: 'node_modules/font-awesome/css',
 						src: [
-							'font-awesome.min.css',
+							'font-awesome.min.css'
 						],
 						dest: 'www/styles'
 					},
@@ -37,7 +45,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'node_modules/typeface-comfortaa/files',
 						src: [
-							'comfortaa-latin-700.woff',
+							'comfortaa-latin-700.woff'
 						],
 						dest: 'www/fonts/comfortaa'
 					},
@@ -45,7 +53,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'node_modules/lato-font/fonts/lato-normal',
 						src: [
-							'lato-normal.woff',
+							'lato-normal.woff'
 						],
 						dest: 'www/fonts/lato'
 					},
@@ -53,7 +61,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'node_modules/lato-font/fonts/lato-semibold',
 						src: [
-							'lato-semibold.woff',
+							'lato-semibold.woff'
 						],
 						dest: 'www/fonts/lato'
 					},
@@ -68,6 +76,12 @@ module.exports = function(grunt) {
 						cwd: 'sources/scripts',
 						src: '**',
 						dest: 'www/scripts'
+					},
+					{
+						expand: true,
+						cwd: 'node_modules/simplemde/dist',
+						src: 'simplemde.min.js',
+						dest: 'www/scripts/plugins'
 					},
 					{
 						expand: true,

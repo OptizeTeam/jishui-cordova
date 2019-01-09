@@ -1,8 +1,5 @@
 extends layout
 
-mixin component(name)
-	li= name
-
 block header
 	.return
 		a(href='index.html')
@@ -12,17 +9,10 @@ block header
 	.extra-space
 
 block content
-	h2
-	//h3 Składniki
-	//ul
-	//	+component('1 kg mąki')
-	//	+component('100 g drożdży')
-	//	+component('500 ml mleka')
-	//	+component('3 jajka')
-	//	+component('1 i 1/4 szkl cukru')
-	//	+component('125 g margaryny')
-	//	+component('1/4 szklanki oleju')
-	//h3 Przygotowanie
+	.title
+		h2
+		a.edit(href='edit.html')
+			i.fa.fa-pencil
 	.description
 
 block scripts
