@@ -1,14 +1,24 @@
 {
-  "name": "jishui",
+  "name": "jishui-cordova",
   "version": "1.0.0",
-  "description": "",
+  "description": "Klient książki kucharskiej",
+  "homepage": "https://github.com/OptizeTeam/jishui-cordova#readme",
+  "bugs": {
+    "url": "https://github.com/OptizeTeam/jishui-cordova/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OptizeTeam/jishui-cordova.git"
+  },
+  "license": "ISC",
+  "author": "Optize sp. z o.o.",
   "main": "gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cordova": "node ./node_modules/cordova/bin/cordova",
+    "grunt": "node ./node_modules/grunt/bin/grunt"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "cordova": "^9.0.0",
     "cordova-android": "latest",
     "cordova-plugin-whitelist": "^1.3.4",
     "font-awesome": "^4.7.0",
@@ -22,6 +32,7 @@
     "simplemde": "^1.11.2",
     "typeface-comfortaa": "0.0.54"
   },
+  "devDependencies": {},
   "cordova": {
     "platforms": [
       "android"
