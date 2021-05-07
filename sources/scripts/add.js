@@ -8,7 +8,8 @@ form.addEventListener('submit', function (e) {
 
 	var recipe = {
 		name: recipeName,
-		description: recipeDescription
+		description: recipeDescription,
+		ingredients: []
 	};
 
 	var request = new XMLHttpRequest();
